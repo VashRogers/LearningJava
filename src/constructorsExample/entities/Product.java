@@ -12,6 +12,11 @@ public class Product {
         this.quantity = quantity;
     }
 
+    public Product(String name, double price){ //exemplo de sobrecarga, nao sendo necessario inicializar quantidade
+        this.name = name;
+        this.price = price;
+    }
+
     public double TotalValueInStock() {
         return price * quantity;
     }
